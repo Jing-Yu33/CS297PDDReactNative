@@ -4,32 +4,32 @@ import Home from "./Home";
 
 import { createStackNavigator } from "@react-navigation/stack";
 import Header from "../../components/Header";
-// import QuitHeader from "../../components/QuitHeader";
-// import Intro from "../create_symptom/Intro";
-// import SelectSymptoms from "../create_symptom/SelectSymptoms";
-// import Timeline from "../create_symptom/Timeline";
-// import Resolved from "../create_symptom/Resolved";
-// import Location from "../create_symptom/Location";
-// import Frequency from "../create_symptom/Frequency";
-// import PainScale from "../create_symptom/PainScale";
-// import BotherScale from "../create_symptom/BotherScale";
-// import Description from "../create_symptom/Description";
-// import FeelBetter from "../create_symptom/FeelBetter";
-// import FeelWorse from "../create_symptom/FeelWorse";
-// import RelatedSymptoms from "../create_symptom/RelatedSymptoms";
-// import PainMovement from "../create_symptom/PainMovement";
-// import Summary from "../create_symptom/Summary";
-// import SelectSymptomsNew from "../create_symptom/SelectSymptomsNew";
-// import Review from "../create_symptom/Review";
-// import SymptomSummary from "./SymptomSummary";
-// import DescriptionText from "../create_symptom/DescriptionText";
-// import ResolvedDate from "../create_symptom/ResolvedDate";
-// import IncompleteSymptoms from "../Drawer_screens/IncompleteSymptoms";
+import QuitHeader from "../../components/QuitHeader";
+import Intro from "../create_symptom/Intro";
+import SelectSymptoms from "../create_symptom/SelectSymptoms";
+import Timeline from "../create_symptom/Timeline";
+import Resolved from "../create_symptom/Resolved";
+import Location from "../create_symptom/Location";
+import Frequency from "../create_symptom/Frequency";
+import PainScale from "../create_symptom/PainScale";
+import BotherScale from "../create_symptom/BotherScale";
+import Description from "../create_symptom/Description";
+import FeelBetter from "../create_symptom/FeelBetter";
+import FeelWorse from "../create_symptom/FeelWorse";
+import RelatedSymptoms from "../create_symptom/RelatedSymptoms";
+import PainMovement from "../create_symptom/PainMovement";
+import Summary from "../create_symptom/Summary";
+import SelectSymptomsNew from "../create_symptom/SelectSymptomsNew";
+import Review from "../create_symptom/Review";
+import SymptomSummary from "./SymptomSummary";
+import DescriptionText from "../create_symptom/DescriptionText";
+import ResolvedDate from "../create_symptom/ResolvedDate";
+import IncompleteSymptoms from "../Drawer_screens/IncompleteSymptoms";
 import Signup from "../auth/SignUp";
 // import Route2 from "./Route2";
 import Auth from "../auth/Auth";
-// import Better from "../review_symptom/Better";
-// import ResolvedReview from "../review_symptom/ResolvedReview";
+import Better from "../review_symptom/Better";
+import ResolvedReview from "../review_symptom/ResolvedReview";
 
 const Stack = createStackNavigator();
 
@@ -75,7 +75,7 @@ function MainStack(props) {
         )}
       </Stack.Screen>
 
-      {/* <Stack.Screen name="Better" options={{ headerShown: false }}>
+      <Stack.Screen name="Better" options={{ headerShown: false }}>
         {(screenProps) => <Better {...screenProps} />}
       </Stack.Screen>
 
@@ -297,7 +297,7 @@ function MainStack(props) {
         }}
       >
         {(screenProps) => <ResolvedDate {...screenProps} />}
-      </Stack.Screen> */}
+      </Stack.Screen>
     </Stack.Navigator>
   );
 }
