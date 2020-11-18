@@ -24,7 +24,7 @@ import Review from "../create_symptom/Review";
 import SymptomSummary from "./SymptomSummary";
 import DescriptionText from "../create_symptom/DescriptionText";
 import ResolvedDate from "../create_symptom/ResolvedDate";
-// import IncompleteSymptoms from "../Drawer_screens/IncompleteSymptoms";
+import IncompleteSymptoms from "../Drawer_screens/IncompleteSymptoms";
 import Signup from "../auth/SignUp";
 // import Route2 from "./Route2";
 import Auth from "../auth/Auth";
@@ -83,7 +83,7 @@ function MainStack(props) {
         {(screenProps) => <ResolvedReview {...screenProps} />}
       </Stack.Screen>
 
-      {/* <Stack.Screen
+      <Stack.Screen
         name="Incomplete symptoms"
         options={{
           header: ({ scene, previous, navigation }) => (
@@ -92,7 +92,7 @@ function MainStack(props) {
         }}
       >
         {(screenProps) => <IncompleteSymptoms {...screenProps} />}
-      </Stack.Screen> */}
+      </Stack.Screen>
 
       <Stack.Screen
         name="Intro"
