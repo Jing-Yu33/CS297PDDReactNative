@@ -3,7 +3,7 @@ import React from "react";
 
 import Auth from "./nav/auth/Auth";
 import Initializing from "./nav/Initializing";
-// import MainNav from "./nav/main/MainNav";
+import MainNav from "./nav/main/MainNav";
 import HomeScreen from "./nav/auth/HomeScreen";
 
 import { ThemeProvider } from "./contexts/ThemeContext";
