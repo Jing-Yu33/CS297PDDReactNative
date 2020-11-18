@@ -15,7 +15,7 @@ import ForgotPassword from "./ForgotPassword";
 
 const { width } = Dimensions.get("window");
 
-class AuthPage extends React.Component {
+class Auth extends React.Component {
   state = {
     showSignUp: false,
     formType: "showSignIn",
@@ -50,11 +50,11 @@ class AuthPage extends React.Component {
 
   render() {
     // const showSignIn = this.state.formType === "showSignIn";
-    // const showSignUp = this.state.formType === "showSignUp";
-    // const showForgotPassword = this.state.formType === "showForgotPassword";
+    const showSignUp = this.state.formType === "showSignUp";
+    const showForgotPassword = this.state.formType === "showForgotPassword";
 
-    // const showLogo = this.state.logo == true;
-    // const showBottomMessage = this.state.bottomMessage == true;
+    const showLogo = this.state.logo == true;
+    const showBottomMessage = this.state.bottomMessage == true;
     return (
       <KeyboardAvoidingView
         style={styles.container}
@@ -76,12 +76,12 @@ class AuthPage extends React.Component {
             updateAuth={() => this.props.updateAuth("mainNav")}
           />
         )} */}
-        {/* {showSignUp && (
+        {showSignUp && (
           <SignUp
             toggleAuthType={this.toggleAuthType}
             toggleBottomMessage={this.toggleBottomMessage}
             toggleLogo={this.toggleLogo}
-            updateAuth={() => this.props.updateAuth("mainNav")}
+            // updateAuth={() => this.props.updateAuth("mainNav")}
             showSignUpFlow={this.state.showSignUpFlow}
             email={this.state.email}
             name={this.state.name}
@@ -116,7 +116,7 @@ class AuthPage extends React.Component {
               </Text>
             )}
           </View>
-        )} */}
+        )} 
       </KeyboardAvoidingView>
     );
   }
@@ -156,4 +156,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AuthPage;
+export default Auth;
