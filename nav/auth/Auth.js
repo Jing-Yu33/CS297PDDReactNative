@@ -15,7 +15,7 @@ import ForgotPassword from "./ForgotPassword";
 
 const { width } = Dimensions.get("window");
 
-class Auth extends React.Component {
+class AuthPage extends React.Component {
   state = {
     showSignUp: false,
     formType: "showSignIn",
@@ -49,34 +49,34 @@ class Auth extends React.Component {
   }
 
   render() {
-    const showSignIn = this.state.formType === "showSignIn";
-    const showSignUp = this.state.formType === "showSignUp";
-    const showForgotPassword = this.state.formType === "showForgotPassword";
+    // const showSignIn = this.state.formType === "showSignIn";
+    // const showSignUp = this.state.formType === "showSignUp";
+    // const showForgotPassword = this.state.formType === "showForgotPassword";
 
-    const showLogo = this.state.logo == true;
-    const showBottomMessage = this.state.bottomMessage == true;
+    // const showLogo = this.state.logo == true;
+    // const showBottomMessage = this.state.bottomMessage == true;
     return (
       <KeyboardAvoidingView
         style={styles.container}
         behavior={Platform.Os == "ios" ? "padding" : "height"}
       >
-        {showLogo && (
+        {/* {showLogo && (
           <Image
             style={styles.logo}
             resizeMode="contain"
             source={require("../../assets/logo.png")}
           />
-        )}
+        )} */}
         {/*  {showLogo && (
           <Text style={styles.subtitle}></Text>
         )} */}
-        {showSignIn && (
+        {/* {showSignIn && (
           <SignIn
             toggleAuthType={this.toggleAuthType}
             updateAuth={() => this.props.updateAuth("mainNav")}
           />
-        )}
-        {showSignUp && (
+        )} */}
+        {/* {showSignUp && (
           <SignUp
             toggleAuthType={this.toggleAuthType}
             toggleBottomMessage={this.toggleBottomMessage}
@@ -116,7 +116,7 @@ class Auth extends React.Component {
               </Text>
             )}
           </View>
-        )}
+        )} */}
       </KeyboardAvoidingView>
     );
   }
@@ -156,4 +156,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Auth;
+export default AuthPage;

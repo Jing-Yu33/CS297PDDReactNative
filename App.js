@@ -1,7 +1,7 @@
 import "react-native-gesture-handler";
 import React from "react";
 
-import Auth from "./nav/auth/Auth";
+import AuthPage from "./nav/auth/Auth";
 import Initializing from "./nav/Initializing";
 // import MainNav from "./nav/main/MainNav";
 import HomeScreen from "./nav/auth/HomeScreen";
@@ -31,7 +31,7 @@ class App extends React.Component {
   };
 
   async componentDidMount() {
-    //await AmplifyAuth.signOut();
+    await AmplifyAuth.signOut();
     Hub.listen("auth", ({ payload: { event, data } }) => {
       switch (event) {
         case "signIn":
@@ -72,11 +72,11 @@ class App extends React.Component {
       <Provider store={store}>
       <ThemeProvider>
         {currentView === "initializing" && <Initializing />}
-        {currentView === "auth" && <Auth updateAuth={this.updateAuth} />}
+        {currentView === "auth" && (<AuthPage updateAuth={this.updateAuth} />)}
         {currentView === "LoginOptions" && (
           <HomeScreen updateAuth={this.updateAuth} />
         )}
-        {currentView === "mainNav" && <MainNav updateAuth={this.updateAuth} />}
+        {/* {currentView === "mainNav" && <MainNav updateAuth={this.updateAuth} />} */}
       </ThemeProvider>
       </Provider>
     );
