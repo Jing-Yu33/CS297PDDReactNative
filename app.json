@@ -1,8 +1,9 @@
 {
   "expo": {
-    "name": "CS297PDDReactNative",
-    "slug": "CS297PDDReactNative",
+    "name": "test",
+    "slug": "test",
     "version": "1.0.0",
+    "sdkVersion": "38.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -10,6 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "scheme" : "myhealthjournal",
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -17,16 +19,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+      "supportsTablet": true,
+      "bundleIdentifier": "com.myhealthtoday.test"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": ""
   }
 }
