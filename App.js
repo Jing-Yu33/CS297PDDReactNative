@@ -76,7 +76,7 @@ class App extends React.Component {
         {currentView === "LoginOptions" && (
           <HomeScreen updateAuth={this.updateAuth} />
         )}
-        {/* {currentView === "mainNav" && <MainNav updateAuth={this.updateAuth} />} */}
+        {currentView === "mainNav" && <MainNav updateAuth={this.updateAuth} />}
       </ThemeProvider>
       </Provider>
     );

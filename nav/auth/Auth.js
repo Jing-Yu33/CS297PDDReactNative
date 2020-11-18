@@ -49,7 +49,7 @@ class Auth extends React.Component {
   }
 
   render() {
-    // const showSignIn = this.state.formType === "showSignIn";
+    const showSignIn = this.state.formType === "showSignIn";
     const showSignUp = this.state.formType === "showSignUp";
     const showForgotPassword = this.state.formType === "showForgotPassword";
 
@@ -70,12 +70,12 @@ class Auth extends React.Component {
         {/*  {showLogo && (
           <Text style={styles.subtitle}></Text>
         )} */}
-        {/* {showSignIn && (
+        {showSignIn && (
           <SignIn
             toggleAuthType={this.toggleAuthType}
             updateAuth={() => this.props.updateAuth("mainNav")}
           />
-        )} */}
+        )}
         {showSignUp && (
           <SignUp
             toggleAuthType={this.toggleAuthType}
