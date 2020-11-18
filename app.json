@@ -3,7 +3,6 @@
     "name": "test",
     "slug": "test",
     "version": "1.0.0",
-    "sdkVersion": "38.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -11,7 +10,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "scheme" : "myhealthjournal",
+    "scheme": "myhealthjournal",
     "updates": {
       "fallbackToCacheTimeout": 0
     },
