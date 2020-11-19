@@ -26,7 +26,7 @@ import DescriptionText from "../create_symptom/DescriptionText";
 import ResolvedDate from "../create_symptom/ResolvedDate";
 import IncompleteSymptoms from "../Drawer_screens/IncompleteSymptoms";
 import Signup from "../auth/SignUp";
-// import Route2 from "./Route2";
+import Route2 from "./Route2";
 import Auth from "../auth/Auth";
 import Better from "../review_symptom/Better";
 import ResolvedReview from "../review_symptom/ResolvedReview";
@@ -44,9 +44,9 @@ function MainStack(props) {
         cardStyle : {backgroundColor :"#fff"}
       }}
     >
-      {/* <Stack.Screen name="Route2" options={{ headerShown: false }}>
+      <Stack.Screen name="Route2" options={{ headerShown: false }}>
         {(screenProps) => <Route2 {...screenProps} />}
-      </Stack.Screen> */}
+      </Stack.Screen>
 
       <Stack.Screen name="Home">
         {(screenProps) => (
