@@ -35,7 +35,7 @@ class Signup extends Component {
       new Date().getMonth(),
       new Date().getDate()
     ),
-    gender: "",
+    gender: "male",
     chronicCondition: {
       known: [],
       other: "",

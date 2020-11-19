@@ -8,12 +8,14 @@ const { width, height } = Dimensions.get("window");
 
 export default class Gender extends Component {
   state = {
-    gender: "Male",
+    gender: "male",
     progress: this.props.stage / this.props.maxStage,
   };
   onChange = (gender) => {
+    console.log(gender)
     this.props.addToParent("gender", gender);
   };
+
   render() {
     return (
       <View style={styles.container}>
