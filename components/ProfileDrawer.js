@@ -22,6 +22,8 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { scale, verticalScale, moderateScale } from "./Scale";
 import Storage from "@aws-amplify/storage";
 import { useSelector } from 'react-redux';
+import { Auth } from "aws-amplify";
+
 const _retrieveUser = async () => {
   const userObj = (await AsyncStorage.getItem("userObj")) || "none";
   return JSON.parse(userObj);
@@ -83,6 +85,25 @@ export function ProfileDrawer(props) {
     }
   }, [isDrawerOpen]);
  */
+
+  const clearAppData = async () => {
+    try {
+      const keys = await AsyncStorage.getAllKeys();
+      await AsyncStorage.multiRemove(keys);
+    } catch (error) {
+      console.error("Error clearing app data.");
+    }
+  };
+
+  const signOut = async (props) => {
+    try {
+      await clearAppData();
+      await Auth.signOut();
+      props.updateAuth("auth");
+    } catch (error) {
+      console.log("error signing out: ", error);
+    }
+  }
   const reviewSymptoms = () => {
     props.navigation.navigate("Home");
   };
@@ -182,7 +203,24 @@ export function ProfileDrawer(props) {
               props.navigation.navigate("ProfileStack");
             }}
           />
+
+          <DrawerItem
+            icon={({ color, size }) => (
+              <MaterialCommunityIcons
+                name="bookmark-outline"
+                color={color}
+                size={size}
+              />
+            )}
+            label="Logout"
+            onPress={() => {
+              signOut(props);
+            }}
+          />
         </Drawer.Section>
+
+
+
         {/* <Drawer.Section title="Preferences">
           <TouchableRipple onPress={() => {}}>
             <View style={styles.preference}>
