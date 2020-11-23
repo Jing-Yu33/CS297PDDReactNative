@@ -8,7 +8,7 @@ import ReportType from "../create_report/ReportType";
 import VisitDate from "../create_report/VisitDate";
 import SymptomRange from "../create_report/SymptomRange";
 import SymptomList from "../create_report/SymptomList";
-import AdditionalNotes from "../create_report/AdditionalNotes";
+// import AdditionalNotes from "../create_report/AdditionalNotes";
 // import ShareHome from "../share_report/ShareHome";
 // import SendTime from "../share_report/SendTime";
 // import DatePicker from "../share_report/DatePicker";
