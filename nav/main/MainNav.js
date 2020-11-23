@@ -1,7 +1,7 @@
 import React from "react";
 
 import MainStack from "./MainStack";
-// import ReportStack from "../Drawer_screens/ReportStack";
+import ReportStack from "../Drawer_screens/ReportStack";
 // import ProfileStack from "../Profile/ProfileStack";
 
 import { createDrawerNavigator } from "@react-navigation/drawer";
@@ -24,10 +24,10 @@ function MainNav(props) {
             <MainStack {...screenProps} updateAuth={props.updateAuth} />
           )}
         </Drawer.Screen>
-        {/* <Drawer.Screen name="ReportStack">
+        <Drawer.Screen name="ReportStack">
           {(screenProps) => <ReportStack {...screenProps} />}
         </Drawer.Screen>
-        <Drawer.Screen name="ProfileStack">
+        {/* <Drawer.Screen name="ProfileStack">
           {(screenProps) => (
             <ProfileStack {...screenProps} updateAuth={props.updateAuth} />
           )}

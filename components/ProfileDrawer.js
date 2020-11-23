@@ -181,7 +181,7 @@ export function ProfileDrawer(props) {
               props.navigation.navigate("Home");
             }}
           />
-          {/* <DrawerItem
+          <DrawerItem
             icon={({ color, size }) => (
               <MaterialCommunityIcons name="tune" color={color} size={size} />
             )}
@@ -189,7 +189,7 @@ export function ProfileDrawer(props) {
             onPress={() => {
               props.navigation.navigate("ReportStack");
             }}
-          /> */}
+          />
           <DrawerItem
             icon={({ color, size }) => (
               <MaterialCommunityIcons

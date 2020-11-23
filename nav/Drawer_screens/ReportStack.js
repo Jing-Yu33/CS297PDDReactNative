@@ -9,11 +9,11 @@ import VisitDate from "../create_report/VisitDate";
 import SymptomRange from "../create_report/SymptomRange";
 import SymptomList from "../create_report/SymptomList";
 import AdditionalNotes from "../create_report/AdditionalNotes";
-import ShareHome from "../share_report/ShareHome";
-import SendTime from "../share_report/SendTime";
-import DatePicker from "../share_report/DatePicker";
+// import ShareHome from "../share_report/ShareHome";
+// import SendTime from "../share_report/SendTime";
+// import DatePicker from "../share_report/DatePicker";
 import Summary from "../create_report/Summary";
-import AddCaregiver from "../share_report/AddCareGIver";
+// import AddCaregiver from "../share_report/AddCareGIver";
 import ReportPreview from "./ReportPreview";
 import SymptomSummary from "../main/SymptomSummary";
 
@@ -80,15 +80,15 @@ function ReportStack(props) {
       >
         {(screenProps) => <AdditionalNotes {...screenProps} />}
       </Stack.Screen>
-      <Stack.Screen
+      {/* <Stack.Screen
         name="ShareHome"
         options={{
           header: ({ navigation }) => <QuitHeader navigation={navigation} />,
         }}
       >
         {(screenProps) => <ShareHome {...screenProps} />}
-      </Stack.Screen>
-      <Stack.Screen
+      </Stack.Screen> */}
+      {/* <Stack.Screen
         name="SendTime"
         options={{
           header: ({ navigation }) => <QuitHeader navigation={navigation} />,
@@ -103,7 +103,7 @@ function ReportStack(props) {
         }}
       >
         {(screenProps) => <DatePicker {...screenProps} />}
-      </Stack.Screen>
+      </Stack.Screen> */}
       <Stack.Screen
         name="Summary"
         options={{
@@ -112,14 +112,14 @@ function ReportStack(props) {
       >
         {(screenProps) => <Summary {...screenProps} />}
       </Stack.Screen>
-      <Stack.Screen
+      {/* <Stack.Screen
         name="AddCareGiver"
         options={{
           header: ({ navigation }) => <QuitHeader navigation={navigation} />,
         }}
       >
         {(screenProps) => <AddCaregiver {...screenProps} />}
-      </Stack.Screen>
+      </Stack.Screen> */}
     </Stack.Navigator>
   );
 }
