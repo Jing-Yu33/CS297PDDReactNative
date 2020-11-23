@@ -72,23 +72,23 @@ function ReportStack(props) {
       >
         {(screenProps) => <SymptomList {...screenProps} />}
       </Stack.Screen>
-      {/* <Stack.Screen
+      <Stack.Screen
         name="AdditionalNotes"
         options={{
           header: ({ navigation }) => <QuitHeader navigation={navigation} />,
         }}
       >
         {(screenProps) => <AdditionalNotes {...screenProps} />}
-      </Stack.Screen> */}
-      {/* <Stack.Screen
+      </Stack.Screen>
+      <Stack.Screen
         name="ShareHome"
         options={{
           header: ({ navigation }) => <QuitHeader navigation={navigation} />,
         }}
       >
         {(screenProps) => <ShareHome {...screenProps} />}
-      </Stack.Screen> */}
-      {/* <Stack.Screen
+      </Stack.Screen>
+      <Stack.Screen
         name="SendTime"
         options={{
           header: ({ navigation }) => <QuitHeader navigation={navigation} />,
@@ -103,7 +103,7 @@ function ReportStack(props) {
         }}
       >
         {(screenProps) => <DatePicker {...screenProps} />}
-      </Stack.Screen> */}
+      </Stack.Screen>
       <Stack.Screen
         name="Summary"
         options={{
@@ -112,14 +112,14 @@ function ReportStack(props) {
       >
         {(screenProps) => <Summary {...screenProps} />}
       </Stack.Screen>
-      {/* <Stack.Screen
+      <Stack.Screen
         name="AddCareGiver"
         options={{
           header: ({ navigation }) => <QuitHeader navigation={navigation} />,
         }}
       >
         {(screenProps) => <AddCaregiver {...screenProps} />}
-      </Stack.Screen> */}
+      </Stack.Screen>
     </Stack.Navigator>
   );
 }
