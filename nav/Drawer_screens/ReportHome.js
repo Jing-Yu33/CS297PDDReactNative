@@ -217,13 +217,13 @@ class ReportHome extends React.Component {
             source={require("../../assets/Orange_Logo.png")}
           />
           <Text style={styles.emptyListText}>NO REPORT CREATED YET</Text>
-          {/* <TouchableOpacity
+          <TouchableOpacity
             style={styles.searchButton}
             onPress={() => this.props.navigation.push("ReportType")}
           >
             <AntDesign name="plus" size={20} color="white" />
             <Text style={styles.createText}>CREATE</Text>
-          </TouchableOpacity> */}
+          </TouchableOpacity>
         </SafeAreaView>
       );
     }
@@ -287,7 +287,7 @@ class ReportHome extends React.Component {
           style={styles.searchButton}
           onPress={() => this.props.navigation.push("SymptomRange")}
         >
-          <AntDesign name="plus" size={20} color="white" />
+          <AntDesign name="plus" size={20} color="#E0E0E0" />
           <Text style={styles.createText}>CREATE</Text>
         </TouchableOpacity>
       </SafeAreaView>

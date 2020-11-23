@@ -47,7 +47,7 @@ function ReportStack(props) {
       </Stack.Screen>
       <Stack.Screen name="ReportType">
         {(screenProps) => <ReportType {...screenProps} />}
-      </Stack.Screen>
+      </Stack.Screen> 
       <Stack.Screen
         name="VisitDate"
         options={{
@@ -72,14 +72,14 @@ function ReportStack(props) {
       >
         {(screenProps) => <SymptomList {...screenProps} />}
       </Stack.Screen>
-      <Stack.Screen
+      {/* <Stack.Screen
         name="AdditionalNotes"
         options={{
           header: ({ navigation }) => <QuitHeader navigation={navigation} />,
         }}
       >
         {(screenProps) => <AdditionalNotes {...screenProps} />}
-      </Stack.Screen>
+      </Stack.Screen> */}
       {/* <Stack.Screen
         name="ShareHome"
         options={{
