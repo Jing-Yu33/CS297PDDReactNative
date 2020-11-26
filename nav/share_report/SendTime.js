@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   orangeText: {
-    color: "#F4892C",
+    color: "#ffc909",
     fontSize: 20,
     textAlign: "left",
     alignSelf: "stretch",

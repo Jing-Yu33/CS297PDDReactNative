@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
     elevation: 0,
   },
   appTitle: {
-    color: "#F4892C",
+    color: "#ffc909",
     fontSize: moderateScale(16),
     textAlign: "right",
     alignSelf: "stretch",

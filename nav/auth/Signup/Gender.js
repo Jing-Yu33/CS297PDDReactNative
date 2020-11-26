@@ -27,7 +27,7 @@ export default class Gender extends Component {
           <View style={{ flex: 2, flexDirection: "column", justifyContent: "space-around"}}>
             <AwesomeButton
                 textColor={this.props.gender === "male"? "#FFFFFF" : "#505050" }
-                backgroundColor={this.props.gender === "male"? "#F4892C" : "#FFFFFF" }
+                backgroundColor={this.props.gender === "male"? "#ffc909" : "#FFFFFF" }
                 borderWidth={0.5}
                 width={200}
                 raiseLevel={0}
@@ -40,7 +40,7 @@ export default class Gender extends Component {
 
               <AwesomeButton
                 textColor={this.props.gender === "female"? "#FFFFFF" : "#505050" }
-                backgroundColor={this.props.gender === "female"? "#F4892C" : "#FFFFFF" }
+                backgroundColor={this.props.gender === "female"? "#ffc909" : "#FFFFFF" }
                 borderWidth={0.5}
                 width={200}
                 raiseLevel={0}

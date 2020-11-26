@@ -17,7 +17,7 @@ const onPressItem = (
       selectedArray.filter((txt) => txt !== item.name)
     );
   } else {
-    item.style = { backgroundColor: "#F4892C" };
+    item.style = { backgroundColor: "#ffc909" };
     setState(selectedArrayName, selectedArray.concat(item.name));
   }
 

@@ -299,7 +299,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   orangeText: {
-    color: "#F4892C",
+    color: "#ffc909",
     fontSize: 18,
     fontWeight: "bold",
     textAlign: "left",
@@ -314,7 +314,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     margin: 20,
     padding: 10,
-    backgroundColor: "#F4892C",
+    backgroundColor: "#ffc909",
     right: 0,
     bottom: 40,
   },

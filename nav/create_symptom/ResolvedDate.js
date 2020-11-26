@@ -116,8 +116,8 @@ const styles = StyleSheet.create({
 
 const theme = {
   colors: {
-    text: "#F4892C",
-    primary: "#F4892C",
+    text: "#ffc909",
+    primary: "#ffc909",
     underlineColor: "transparent",
     background: "#003489",
   },

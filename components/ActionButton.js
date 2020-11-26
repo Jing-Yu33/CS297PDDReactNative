@@ -15,7 +15,7 @@ const ActionButton = ({ onPress, title }) => (
 
 const styles = StyleSheet.create({
   buttonContainer: {
-    backgroundColor: "#F4892C",
+    backgroundColor: "#ffc909",
     borderRadius: 4,
   },
   button: {

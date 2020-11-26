@@ -319,7 +319,7 @@ const styles = StyleSheet.create({
     fontSize: moderateScale(20),
   },
   deleteModalBtn: {
-    color: "#F4892C",
+    color: "#ffc909",
   },
   conditionButton: {
     marginLeft: 10,
@@ -343,7 +343,7 @@ const styles = StyleSheet.create({
     right: 10,
     //height: 70,
     padding: 20,
-    backgroundColor: "#F4892C",
+    backgroundColor: "#ffc909",
     borderRadius: 5,
   },
   logo: {

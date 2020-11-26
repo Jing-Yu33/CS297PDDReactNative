@@ -11,7 +11,7 @@ const CustomProgressBar = ({ length, maxLength }) => {
         {" "}
         {this.state.stage} of {this.state.maxStage}{" "}
       </Text>
-      <ProgressBar progress={length / maxLength} width="40%" color="#F4892C" />
+      <ProgressBar progress={length / maxLength} width="40%" color="#ffc909" />
     </View>
   );
 };
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   step: {
     fontSize: 20,
     fontWeight: "bold",
-    color: "#F4892C",
+    color: "#ffc909",
     marginRight: width * 0.05,
   },
 });

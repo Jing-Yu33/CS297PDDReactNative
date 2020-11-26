@@ -67,7 +67,7 @@ export default class CareGiver extends Component {
         {this.showInputBox("Relationship", "relationship")}
         <Button
           mode="contained"
-          labelStyle={{ color: "#F4892C", fontSize: 17 }}
+          labelStyle={{ color: "#ffc909", fontSize: 17 }}
           theme={theme}
           color="#fff"
           onPress={this.onAddNewCareGiver}
@@ -108,9 +108,9 @@ export default class CareGiver extends Component {
             this.caregiverForm()
           ) : (
             <Button
-              icon={() => <AntDesign name="plus" size={24} color="#F4892C" />}
+              icon={() => <AntDesign name="plus" size={24} color="#ffc909" />}
               mode="contained"
-              labelStyle={{ color: "#F4892C", fontSize: 17 }}
+              labelStyle={{ color: "#ffc909", fontSize: 17 }}
               theme={theme}
               color="#fff"
               onPress={this.onAdd}
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
   },
   inputText: {
     height: 50,
-    borderColor: "#F4892C",
+    borderColor: "#ffc909",
     borderWidth: 1,
     borderRadius: 5,
     padding: 10,
@@ -179,8 +179,8 @@ const styles = StyleSheet.create({
 
 const theme = {
   colors: {
-    text: "#F4892C",
-    primary: "#F4892C",
+    text: "#ffc909",
+    primary: "#ffc909",
     underlineColor: "transparent",
     background: "#003489",
   },

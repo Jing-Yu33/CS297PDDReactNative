@@ -213,11 +213,11 @@ const styles = StyleSheet.create({
     right: 10,
     //height: 70,
     padding: 20,
-    backgroundColor: "#F4892C",
+    backgroundColor: "#ffc909",
     borderRadius: 5,
   },
   selected: {
-    backgroundColor: "#F4892C3C",
+    backgroundColor: "#ffc9093C",
     width: width - 20,
     padding: 15,
     margin: 10,
@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
     marginLeft: "auto",
   },
   orangeText: {
-    color: "#F4892C",
+    color: "#ffc909",
     textAlign: "left",
     alignSelf: "stretch",
     marginHorizontal: 20,

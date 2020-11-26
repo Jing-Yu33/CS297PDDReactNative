@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
     opacity: 0.8,
   },
   orangeText: {
-    color: "#F4892C",
+    color: "#ffc909",
     fontSize: moderateScale(20),
     fontWeight: "bold",
     marginBottom: verticalScale(20),

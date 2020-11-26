@@ -131,16 +131,16 @@ export default class ChronicDisease extends Component {
             //canAddItems
             //onAddItem={this.onAddItems}
             onChangeInput={(text) => this.onSymptomTextChange(text)}
-            tagRemoveIconColor="#F4892C"
-            tagBorderColor="#F4892C"
-            tagTextColor="#F4892C"
+            tagRemoveIconColor="#ffc909"
+            tagBorderColor="#ffc909"
+            tagTextColor="#ffc909"
             selectedItemTextColor="#CCC"
-            selectedItemIconColor="#F4892C"
+            selectedItemIconColor="#ffc909"
             itemTextColor="#000"
             displayKey="symptomName"
             hideSubmitButton
             searchInputStyle={{ color: "#CCC" }}
-            submitButtonColor="#F4892C"
+            submitButtonColor="#ffc909"
             submitButtonText="Submit"
           />
         </View>

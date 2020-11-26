@@ -8,9 +8,9 @@ const RadioButtonGroup = ({ ButtonArray, updateFunc, property }) => (
   <RadioGroup
     radioGroupList={ButtonArray}
     buttonContainerActiveStyle={{
-      backgroundColor: "#F4892C3C",
+      backgroundColor: "#ffc9093C",
     }}
-    buttonTextActiveStyle={{ color: "#F4892C" }}
+    buttonTextActiveStyle={{ color: "#ffc909" }}
     buttonContainerInactiveStyle={{
       backgroundColor: "white",
     }}

@@ -309,7 +309,7 @@ class Signup extends Component {
                   : this.state.maxStage / this.state.maxStage
               }
               width="40%"
-              color="#F4892C"
+              color="#ffc909"
             />
           </View>
           <View style={{ flex: 5 }}>
@@ -387,7 +387,7 @@ const styles = StyleSheet.create({
   step: {
     fontSize: 20,
     fontWeight: "bold",
-    color: "#F4892C",
+    color: "#ffc909",
     marginRight: width * 0.05,
   },
   btnText: {

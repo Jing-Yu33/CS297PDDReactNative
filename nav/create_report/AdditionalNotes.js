@@ -130,9 +130,9 @@ export default class AdditionalNotes extends Component {
                       renderItem={this.renderImage}
                     ></FlatList>
                     <Button
-                      icon={() => <AntDesign name="plus" size={24} color="#F4892C" />}
+                      icon={() => <AntDesign name="plus" size={24} color="#ffc909" />}
                       mode="contained"
-                      labelStyle={{ color: "#F4892C", fontSize: 17, padding: 10 }}
+                      labelStyle={{ color: "#ffc909", fontSize: 17, padding: 10 }}
                       theme={theme}
                       color="#fff"
                       style={styles.addImageBtn}
@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
     height: height * 0.2,
   },
   orangetext: {
-    color: "#F4892C",
+    color: "#ffc909",
     fontSize: 18,
     fontWeight: "bold",
     textAlign: "left",
@@ -236,7 +236,7 @@ const styles = StyleSheet.create({
   },
   fab: {
     margin: 16,
-    backgroundColor: "#F4892C",
+    backgroundColor: "#ffc909",
     right: 0,
     bottom: 0,
   },
@@ -250,8 +250,8 @@ const styles = StyleSheet.create({
 
 const theme = {
   colors: {
-    text: "#F4892C",
-    primary: "#F4892C",
+    text: "#ffc909",
+    primary: "#ffc909",
     underlineColor: "transparent",
     background: "#003489",
   },

@@ -26,8 +26,8 @@ export default class Resolved extends Component {
         value: "Resolved",
       },
     ],
-    activeBgColor: "#F4892C3C",
-    activeTxtColor: "#F4892C",
+    activeBgColor: "#ffc9093C",
+    activeTxtColor: "#ffc909",
     inActiveBgColor: "white",
     inActiveTxtColor: "#505050",
   };

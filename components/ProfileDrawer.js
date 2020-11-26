@@ -287,7 +287,7 @@ const styles = StyleSheet.create({
   },
   orangeText: {
     fontSize: moderateScale(16),
-    color: "#F4892C",
+    color: "#ffc909",
   },
   greyCard: {
     marginVertical: verticalScale(10),
