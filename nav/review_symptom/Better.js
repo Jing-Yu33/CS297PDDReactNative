@@ -61,10 +61,10 @@ export default class Better extends Component {
           style={{ width: width - 40, height: 80, marginLeft: 10, marginRight: 10, marginTop: 10, marginBottom: 0 }}
           minimumValue={1}
           maximumValue={10}
-          minimumTrackTintColor="#F4892C"
-          maximumTrackTintColor="#F4892C3C"
+          minimumTrackTintColor="#ffc909"
+          maximumTrackTintColor="#ffc9093C"
           step={1}
-          thumbTintColor="#F4892C"
+          thumbTintColor="#ffc909"
           onSlidingComplete={(val) => this.setState({ severity: val })}
           onValueChange={(val) => this.onValueChange(val)}
         />
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     margin: moderateScale(10),
   },
   orangetext: {
-    color: "#F4892C",
+    color: "#ffc909",
     fontSize: 18,
     fontWeight: "bold",
     textAlign: "left",
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   orangetextmiddle: {
-    color: "#F4892C",
+    color: "#ffc909",
     fontSize: 18,
     fontWeight: "bold",
     textAlign: "center",

@@ -107,11 +107,11 @@ export default class SelectSymptomsNew extends Component {
               selectText="Pick Items"
               searchInputPlaceholderText="Search Items..."
               onChangeInput={(text) => this.onSymptomTextChange(text)}
-              tagRemoveIconColor="#F4892C"
-              tagBorderColor="#F4892C"
-              tagTextColor="#F4892C"
+              tagRemoveIconColor="#ffc909"
+              tagBorderColor="#ffc909"
+              tagTextColor="#ffc909"
               selectedItemTextColor="#CCC"
-              selectedItemIconColor="#F4892C"
+              selectedItemIconColor="#ffc909"
               itemTextColor="#000"
               displayKey="symptomName"
               searchInputStyle={{ color: "#CCC" }}
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   orangeText: {
-    color: "#F4892C",
+    color: "#ffc909",
   },
   multiSelect: {
     width: width - 20,
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
   fab: {
     position: "absolute",
     margin: 20,
-    backgroundColor: "#F4892C",
+    backgroundColor: "#ffc909",
     right: 0,
     bottom: 40,
   },

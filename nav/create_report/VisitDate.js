@@ -6,20 +6,23 @@ import {
   View,
   Dimensions,
   TouchableOpacity,
-  SafeAreaView,
 } from "react-native";
 import NavigationArrows from "../../components/NavigationArrows";
 import DatePicker2 from "../../components/DatePicker2";
 
-export default class ResolvedDate extends Component {
+export default class VisitDate extends Component {
   state = {
-    resolvedDate: "",
+    visitDate: "",
+    showCalendar: false,
+    //progress: this.props.stage / this.props.maxStage,
   };
 
   onDateChange = (val) => {
     let formattedDate = this.formatDate(val);
+    console.log("visit date");
+    console.log(val);
     this.setState({
-      resolvedDate: formattedDate,
+      visitDate: formattedDate,
     });
   };
 
@@ -36,26 +39,25 @@ export default class ResolvedDate extends Component {
   };
 
   render() {
+    //const { username } = this.props.route.params;
+    const { username } = "Sagar";
     return (
-      <SafeAreaView style={styles.container}>
-        <Text style={styles.message}>
-          Tell us when your symptom got resolved.
-        </Text>
-        <DatePicker2
-          dateAttribute="resolvedDate"
-          onChange={this.onDateChange}
-        />
+      <View style={styles.container}>
+        <Text style={styles.message}>Select clinic visit date</Text>
+
+        <DatePicker2 dateAttribute="visitDate" onChange={this.onDateChange} />
+
         <NavigationArrows
-          nextScreen="Summary"
+          nextScreen="SymptomRange"
           props={this.props}
           propsToPass={{
-            resolvedDate:
-              this.state.resolvedDate !== ""
-                ? this.state.resolvedDate
+            visitDate:
+              this.state.visitDate !== ""
+                ? this.state.visitDate
                 : this.formatDate(new Date()),
           }}
         />
-      </SafeAreaView>
+      </View>
     );
   }
 }
@@ -83,7 +85,6 @@ const styles = StyleSheet.create({
     color: "#505050",
     fontSize: 25,
     marginBottom: 20,
-    textAlign: "center",
   },
   name: {
     color: "#505050",

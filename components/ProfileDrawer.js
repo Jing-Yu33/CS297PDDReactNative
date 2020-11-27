@@ -181,7 +181,7 @@ export function ProfileDrawer(props) {
               props.navigation.navigate("Home");
             }}
           />
-          {/* <DrawerItem
+          <DrawerItem
             icon={({ color, size }) => (
               <MaterialCommunityIcons name="tune" color={color} size={size} />
             )}
@@ -189,7 +189,7 @@ export function ProfileDrawer(props) {
             onPress={() => {
               props.navigation.navigate("ReportStack");
             }}
-          /> */}
+          />
           <DrawerItem
             icon={({ color, size }) => (
               <MaterialCommunityIcons
@@ -287,7 +287,7 @@ const styles = StyleSheet.create({
   },
   orangeText: {
     fontSize: moderateScale(16),
-    color: "#F4892C",
+    color: "#ffc909",
   },
   greyCard: {
     marginVertical: verticalScale(10),

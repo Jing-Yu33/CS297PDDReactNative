@@ -142,7 +142,7 @@ class SymptomSummary extends Component {
               <MaterialCommunityIcons paddingStart = "10"
                 name="pencil"
                 size={24}
-                color="#F4892C"
+                color="#ffc909"
                 onPress={() =>
                   this.props.navigation.push("SelectSymptomsNew", {
                     updateParams: this.updateParams,
@@ -171,7 +171,7 @@ class SymptomSummary extends Component {
               <MaterialCommunityIcons paddingStart = "10"
                 name="pencil"
                 size={24}
-                color="#F4892C"
+                color="#ffc909"
                 onPress={() =>
                   this.props.navigation.push("Timeline", {
                     updateParams: this.updateParams,
@@ -189,7 +189,7 @@ class SymptomSummary extends Component {
               <MaterialCommunityIcons paddingStart = "10"
                 name="pencil"
                 size={24}
-                color="#F4892C"
+                color="#ffc909"
                 onPress={() =>
                   this.props.navigation.push("BotherScale", {
                     updateParams: this.updateParams,
@@ -207,7 +207,7 @@ class SymptomSummary extends Component {
               <MaterialCommunityIcons paddingStart = "10"
                 name="pencil"
                 size={24}
-                color="#F4892C"
+                color="#ffc909"
                 onPress={() =>
                   this.props.navigation.push("PainScale", {
                     updateParams: this.updateParams,
@@ -225,7 +225,7 @@ class SymptomSummary extends Component {
               <MaterialCommunityIcons paddingStart = "10"
                 name="pencil"
                 size={24}
-                color="#F4892C"
+                color="#ffc909"
                 onPress={() =>
                   this.props.navigation.push("Location", {
                     updateParams: this.updateParams,
@@ -245,7 +245,7 @@ class SymptomSummary extends Component {
               <MaterialCommunityIcons paddingStart = "10"
                 name="pencil"
                 size={24}
-                color="#F4892C"
+                color="#ffc909"
                 onPress={() =>
                   this.props.navigation.push("Frequency", {
                     updateParams: this.updateParams,
@@ -265,7 +265,7 @@ class SymptomSummary extends Component {
               <MaterialCommunityIcons paddingStart = "10"
                 name="pencil"
                 size={24}
-                color="#F4892C"
+                color="#ffc909"
                 onPress={() =>
                   this.props.navigation.push("DescriptionText", {
                     updateParams: this.updateParams,
@@ -283,7 +283,7 @@ class SymptomSummary extends Component {
               <MaterialCommunityIcons paddingStart = "10"
                 name="pencil"
                 size={24}
-                color="#F4892C"
+                color="#ffc909"
                 onPress={() =>
                   this.props.navigation.push("FeelBetter", {
                     updateParams: this.updateParams,
@@ -301,7 +301,7 @@ class SymptomSummary extends Component {
               <MaterialCommunityIcons paddingStart = "10"
                 name="pencil"
                 size={24}
-                color="#F4892C"
+                color="#ffc909"
                 onPress={() =>
                   this.props.navigation.push("FeelWorse", {
                     updateParams: this.updateParams,
@@ -321,7 +321,7 @@ class SymptomSummary extends Component {
               <MaterialCommunityIcons paddingStart = "10"
                 name="pencil"
                 size={24}
-                color="#F4892C"
+                color="#ffc909"
                 
                 onPress={() =>
                   this.props.navigation.push("RelatedSymptoms", {
@@ -340,7 +340,7 @@ class SymptomSummary extends Component {
               <MaterialCommunityIcons paddingStart = "10"
                 name="pencil"
                 size={24}
-                color="#F4892C"
+                color="#ffc909"
                 onPress={() =>
                   this.props.navigation.push("PainMovement", {
                     updateParams: this.updateParams,
@@ -360,13 +360,13 @@ class SymptomSummary extends Component {
         </ScrollView>
 
         <View style={styles.buttonRow}>
-          {(!this.props.route.params.notEditItem && !this.state.editMode)? <FAB style={styles.fab_left} icon="pencil" onPress={this.onEdit} color="#F4892C" /> : <View />}
+          {(!this.props.route.params.notEditItem && !this.state.editMode)? <FAB style={styles.fab_left} icon="pencil" onPress={this.onEdit} color="#ffc909" /> : <View />}
 
           <FAB
             style={styles.fab_right}
             icon={this.state.editMode? "check" : "arrow-left"}
             onPress={this.onSubmit}
-            color="#F4892C"
+            color="#ffc909"
           />
         </View>
       </SafeAreaView>
@@ -405,7 +405,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   orangeTitle: {
-    color: "#F4892C",
+    color: "#ffc909",
     fontSize: 18,
     fontWeight: "bold",
     textAlign: "left",
@@ -413,7 +413,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   orangeText: {
-    color: "#F4892C",
+    color: "#ffc909",
     fontSize: 18,
     color: "#505050",
     fontWeight: "bold",
@@ -422,7 +422,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     margin: 20,
     padding: 10,
-    backgroundColor: "#F4892C",
+    backgroundColor: "#ffc909",
     right: 0,
     bottom: 0,
   }, */

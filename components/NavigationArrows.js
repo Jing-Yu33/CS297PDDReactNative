@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   },
   fab_right: {
     margin: moderateScale(10),
-    backgroundColor: "#F4892C",
+    backgroundColor: "#ffc909",
   },
   fab_left: {
     margin: moderateScale(10),

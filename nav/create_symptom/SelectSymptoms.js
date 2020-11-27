@@ -131,6 +131,6 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   orangeText: {
-    color: "#F4892C",
+    color: "#ffc909",
   },
 });

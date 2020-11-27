@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
   },
   appTitle: {
-    color: "#F4892C",
+    color: "#ffc909",
   },
 });
 

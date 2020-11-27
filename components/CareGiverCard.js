@@ -11,7 +11,7 @@ const CareGiverCard = ({caregiver}) => {
             <H1>{caregiver.name}</H1>
         </CardItem>
         <CardItem>
-            <Text styles={{'textColor':'#F4892C'}}>{caregiver.relationship}</Text>
+            <Text styles={{'textColor':'#ffc909'}}>{caregiver.relationship}</Text>
         </CardItem>
         <CardItem>
             <Text>{caregiver.email}</Text>

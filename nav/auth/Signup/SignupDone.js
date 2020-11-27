@@ -24,7 +24,7 @@ export default class SignUpDone extends Component {
           <Text
             style={{
               fontWeight: "bold",
-              color: "#F4892C",
+              color: "#ffc909",
               fontSize: 20,
               marginBottom: width * 0.05,
             }}

@@ -401,7 +401,7 @@ class Home extends React.Component {
               {/* <Button
             style={styles.reviewButton}
             color="white"
-            labelStyle={{ color: "#F4892C" }}
+            labelStyle={{ color: "#ffc909" }}
             mode="text"
           >
             Better
@@ -465,7 +465,7 @@ class Home extends React.Component {
           />
           <Text style={styles.emptyListText}>NO SYMPTOM CREATED YET</Text>
           <Button
-            icon={() => <AntDesign name="plus" size={24} color="#F4892C" />}
+            icon={() => <AntDesign name="plus" size={24} color="#ffc909" />}
             mode="contained"
             labelStyle={styles.addNewText}
             theme={theme}
@@ -596,7 +596,7 @@ const styles = StyleSheet.create({
     right: 10,
     //height: 70,
     padding: 10,
-    backgroundColor: "#F4892C",
+    backgroundColor: "#ffc909",
     borderRadius: 5,
   },
   searchbar: {
@@ -618,7 +618,7 @@ const styles = StyleSheet.create({
     color: "#E2E2E2",
   },
   addNewText: {
-    color: "#F4892C",
+    color: "#ffc909",
     fontSize: 17,
   },
   addNewBtn: {
@@ -628,7 +628,7 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
   },
   needReviewTxt: {
-    color: "#F4892C",
+    color: "#ffc909",
     fontSize: 18,
     paddingTop: "3%",
     alignSelf: "flex-start",
@@ -660,8 +660,8 @@ const styles = StyleSheet.create({
 
 const theme = {
   colors: {
-    text: "#F4892C",
-    primary: "#F4892C",
+    text: "#ffc909",
+    primary: "#ffc909",
     underlineColor: "transparent",
     background: "#003489",
   },

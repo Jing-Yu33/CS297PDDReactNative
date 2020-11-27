@@ -383,9 +383,9 @@ export default class Location extends Component {
               {this.state.stage === Number(1) && (
                 <View style = {{width: width, flex : 1, alignContent:"center", justifyContent:"center", alignItems:"center"}}>
                   <View style={styles.switchRow}>
-                    <Button onPress = {() => this.setState({ isFront: false })} mode= "outlined" color="#000" style={[styles.frontBackButton, {borderColor : this.state.isFront? "#E2E2E2" : "#F4892C"}]}>BACK</Button>
+                    <Button onPress = {() => this.setState({ isFront: false })} mode= "outlined" color="#000" style={[styles.frontBackButton, {borderColor : this.state.isFront? "#E2E2E2" : "#ffc909"}]}>BACK</Button>
                     
-                    <Button onPress = {() => {this.setState({ isFront: true })}} mode= "outlined" color="#000" style={[styles.frontBackButton, {borderColor : this.state.isFront? "#F4892C" : "#E2E2E2"}]} >FRONT</Button>
+                    <Button onPress = {() => {this.setState({ isFront: true })}} mode= "outlined" color="#000" style={[styles.frontBackButton, {borderColor : this.state.isFront? "#ffc909" : "#E2E2E2"}]} >FRONT</Button>
                   </View>
                   <ScrollView style = {{width: "100%",  }}>
                     {this.state.isFront ? (
@@ -435,7 +435,7 @@ export default class Location extends Component {
               <FAB
                 style={styles.fab_text}
                 //icon="plus"
-                color="#F4892C"
+                color="#ffc909"
                 label={this.state.textBtnLbl}
                 onPress={() => {
                   if (this.state.textBtnLbl == "Text") {
@@ -506,7 +506,7 @@ const styles = StyleSheet.create({
     left: 0,
     bottom: 40,
     marginStart: "5%"
-    //color: "#F4892C",
+    //color: "#ffc909",
   },
   textInput: {
     //height: height * 0.2,
@@ -529,7 +529,7 @@ const styles = StyleSheet.create({
   fab: {
     position: "absolute",
     margin: 20,
-    backgroundColor: "#F4892C",
+    backgroundColor: "#ffc909",
     right: 0,
     bottom: 40,
   },

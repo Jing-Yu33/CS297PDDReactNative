@@ -60,16 +60,16 @@ class Auth extends React.Component {
         style={styles.container}
         behavior={Platform.Os == "ios" ? "padding" : "height"}
       >
-        {/* {showLogo && (
+        {showLogo && (
           <Image
             style={styles.logo}
             resizeMode="contain"
             source={require("../../assets/logo.png")}
           />
-        )} */}
-        {/*  {showLogo && (
+        )}
+         {showLogo && (
           <Text style={styles.subtitle}></Text>
-        )} */}
+        )}
         {showSignIn && (
           <SignIn
             toggleAuthType={this.toggleAuthType}
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
     marginTop: 15,
     marginBottom: 20,
     //fontFamily: 'SourceSansPro-SemiBold',
-    color: "#F4892C",
+    color: "#ffc909",
   },
   subtitle: {
     fontSize: 20,

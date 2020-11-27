@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     height: height * 0.4,
   },
   orangetext: {
-    color: "#F4892C",
+    color: "#ffc909",
     fontSize: 18,
     fontWeight: "bold",
     textAlign: "left",
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
   fab: {
     position: "absolute",
     margin: 20,
-    backgroundColor: "#F4892C",
+    backgroundColor: "#ffc909",
     right: 0,
     bottom: 40,
   },
