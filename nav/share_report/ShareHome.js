@@ -139,7 +139,7 @@ class ShareHome extends React.Component {
         <FetchUserData onUpdate={this.onScreenVisit} />
         <Text style={styles.orangeText}>Share</Text>
         <Text style={styles.message}>
-          Who do you want to share your report with?
+          With whom do you want to share your report?
         </Text>
         <View style={styles.flatListView}>
           {this.state.isLoading ? (
