@@ -69,6 +69,7 @@ class AddCaregiver extends Component {
     parsedUser.emergencyContact.push(careGiverDetails);
     let postObj = {
       emergencyContact: parsedUser.emergencyContact,
+      // alexaPin: 1223
     };
 
     const headers = {
@@ -87,7 +88,7 @@ class AddCaregiver extends Component {
         }
       );
       res = await res.json();
-      console.log(res);
+      console.log("res from update patient" + JSON.stringify(res));
       this.props.navigation.pop();
     } catch (e) {
       console.error(e);
