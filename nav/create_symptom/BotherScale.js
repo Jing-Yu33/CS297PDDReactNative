@@ -38,6 +38,7 @@ export default class BotherScale extends Component {
 
     return (
       <SafeAreaView style={styles.container}>
+        
         <Text style={styles.message}>
           On a scale of 0 to 10, how much has this symptom impacted your daily
           life?

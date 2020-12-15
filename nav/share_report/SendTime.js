@@ -108,7 +108,7 @@ export default class SendTime extends Component {
         />
         <NavigationArrows
           nextScreen=""
-          lastStep="close"
+          lastStep="check"
           props={this.props}
           //propsToPass={{ sendTime: this.state.sendTime }}
         />

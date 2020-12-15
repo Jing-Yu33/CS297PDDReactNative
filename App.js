@@ -14,6 +14,10 @@ import awsConfig from "./src/aws-exports";
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import allReducers from './reducers'
+import { LogBox } from 'react-native';
+
+// LogBox.ignoreLogs(['Warning: ...']);
+LogBox.ignoreAllLogs()
 
 Amplify.configure(awsConfig);
 AmplifyAuth.configure(awsConfig);
@@ -68,6 +72,7 @@ class App extends React.Component {
     const { currentView } = this.state;
     const store = createStore(allReducers);
     console.log("currentView: ", currentView);
+    // LogBox.ignoreAllLogs(true);
     return (
       <Provider store={store}>
       <ThemeProvider>

@@ -38,9 +38,10 @@ class AddCaregiver extends Component {
       "https://srobvq5uw2.execute-api.us-west-2.amazonaws.com/dev/users",
       { headers }
     );
+    console.log("response " + JSON.stringify(response)) 
     try {
       const registeredUserObj = await response.json();
-      //console.log(registeredUserObj.data);
+      console.log("fetch user data " + JSON.stringify(registeredUserObj.data));
       if (registeredUserObj.data) {
         this.setState({ userObj: registeredUserObj.data });
       }
@@ -50,11 +51,11 @@ class AddCaregiver extends Component {
   };
 
   postCaregiverData = async () => {
+    console.log("here")
     const userId = (await AsyncStorage.getItem("userId")) || "none";
 
     await this.fetchUserObject(userId);
 
-    //console.log(userId);
     const { name, number, email, area } = this.state;
 
     //constructng the caregiver object
@@ -67,13 +68,14 @@ class AddCaregiver extends Component {
 
     //updating the user object with new care giver
     let parsedUser = this.state.userObj;
-    //console.log("emergency contact");
+    console.log("parsedUser " + JSON.stringify(parsedUser));
+    console.log("contact " + JSON.stringify(careGiverDetails));
     parsedUser.emergencyContact.push(careGiverDetails);
 
     let postObj = {
       emergencyContact: parsedUser.emergencyContact,
     };
-    console.log(postObj);
+    console.log("postObj " + JSON.stringify(postObj));
 
     const headers = {
       Authorization: userId,
@@ -85,13 +87,14 @@ class AddCaregiver extends Component {
       let res = await fetch(
         "https://srobvq5uw2.execute-api.us-west-2.amazonaws.com/dev/users",
         {
-          method: "PUT",
+          // method: "PUT",
+          method:"POST",
           headers,
-          body: JSON.stringify(postObj),
+          body: JSON.stringify(parsedUser),
         }
       );
       res = await res.json();
-      //console.log(res);
+      console.log(JSON.stringify(res));
       this.props.navigation.pop();
     } catch (e) {
       console.error(e);
@@ -137,9 +140,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-
-    padding: moderateScale(20),
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+    // justifyContent: "center",
+    alignItems: "center",
+    // padding: moderateScale(20),
+    // paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
   input: {
     backgroundColor: "#fcf3db",
@@ -161,7 +165,7 @@ const styles = StyleSheet.create({
     fontSize: moderateScale(20),
     fontWeight: "bold",
     marginBottom: verticalScale(20),
-    alignSelf: "flex-start",
+    // alignSelf: "flex-start",
     marginTop: verticalScale(80),
   },
 });

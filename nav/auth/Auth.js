@@ -64,7 +64,7 @@ class Auth extends React.Component {
           <Image
             style={styles.logo}
             resizeMode="contain"
-            source={require("../../assets/logo.png")}
+            source={require("../../assets/logo2.png")}
           />
         )}
          {showLogo && (

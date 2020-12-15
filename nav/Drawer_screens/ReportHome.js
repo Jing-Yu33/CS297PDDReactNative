@@ -214,7 +214,7 @@ class ReportHome extends React.Component {
           )} */}
           <Image
             style={styles.logo}
-            source={require("../../assets/Orange_Logo.png")}
+            source={require("../../assets/logo2.png")}
           />
           <Text style={styles.emptyListText}>NO REPORT CREATED YET</Text>
           <TouchableOpacity
@@ -347,11 +347,15 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   logo: {
-    width: width * 0.6,
+    // width: width * 0.6,
     height: verticalScale(50),
   },
   deleteModal: {
     backgroundColor: "white",
+  },
+  emptyListText: {
+    marginVertical: verticalScale(10),
+    color: "#E2E2E2",
   },
 });
 

@@ -67,7 +67,9 @@ class CareGiver extends React.Component {
   async componentDidMount() {
     this.loadCareGiverList();
   }
-
+  async componentDidUpdate () {
+    
+  }
   onDelete = (id) => {
     this.setState({
       careGiverList: this.state.careGiverList.filter(

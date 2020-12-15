@@ -26,9 +26,11 @@ class BasicInfo extends Component {
       <SafeAreaView style={styles.container}>
         <Avatar.Image
           size={scale(80)}
-          source={{ uri: this.props.profileImageUrl }}
+          // source={{ uri: this.props.profileImageUrl }}
           style={{ backgroundColor: "rgba(0,0,0,0)" }}
-          defaultSource={require('../../assets/default_profile.png')}
+          // defaultSource={require('../../assets/default_profile.png')}
+          source={require('../../assets/avatar.png')}
+
         />
         <Caption style={styles.caption}>Tap to change avatar</Caption>
         <View style={styles.userinfo}>
@@ -61,15 +63,15 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
-    padding: moderateScale(20),
+    // padding: moderateScale(20),
   },
   caption: {
     marginBottom: verticalScale(30),
   },
   userinfo: {
-    justifyContent: "flex-start",
+    justifyContent: "center",
     alignSelf: "stretch",
-    alignItems: "flex-start",
+    alignItems: "center",
   },
   orangeText: {
     color: "#F4892C",

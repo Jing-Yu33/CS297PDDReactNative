@@ -16,7 +16,7 @@ class Initializing extends React.Component {
         <Animated.Image
           style={[styles.logo, { transform: [{ scale: this.animatedValue }] }]}
           resizeMode="contain"
-          source={require("../assets/logo.png")}
+          source={require("../assets/logo2.png")}
         />
       </View>
     );

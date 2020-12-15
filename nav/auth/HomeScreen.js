@@ -13,6 +13,10 @@ export default class HomeScreen extends Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
+        <Image
+            style={styles.logo}
+            source={require("../../assets/logo2.png")}
+          />
         <Button
           style={[styles.conditionButton, styles.LoginButton]}
           color="#fff"
@@ -81,5 +85,9 @@ const styles = StyleSheet.create({
   },
   conditionlabel: {
     fontSize: 18,
+  },
+  logo: {
+    height: verticalScale(60),
+    marginBottom: 60
   },
 });

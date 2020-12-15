@@ -115,29 +115,16 @@ export function ProfileDrawer(props) {
       <View style={styles.drawerContent}>
         <View style={styles.userInfoSection}>
           <Avatar.Image
-            source={(imageUrl && imageUrl !== 0) ? { uri: imageUrl } : require('../assets/default_profile.png')}
-            size={50}
+            // source={(imageUrl && imageUrl !== 0) ? { uri: imageUrl } : require('../assets/avatar.png')}
+            source={require('../assets/avatar_small.png')}
+            // size={50}
             style={{ backgroundColor: "rgba(0,0,0,0)" }}
-            defaultSource={require('../assets/default_profile.png')}
+            // defaultSource={require('../assets/default_profile.png')}
           />
           <Title style={styles.title}>{userObj.username}</Title>
           <Caption style={styles.caption}>
             {loggedSympLastMonth} symptoms logged in this month
           </Caption>
-          {/* <View style={styles.row}>
-            <View style={styles.section}>
-              <Paragraph style={[styles.paragraph, styles.caption]}>
-                202
-              </Paragraph>
-              <Caption style={styles.caption}>Following</Caption>
-            </View>
-            <View style={styles.section}>
-              <Paragraph style={[styles.paragraph, styles.caption]}>
-                159
-              </Paragraph>
-              <Caption style={styles.caption}>Followers</Caption>
-            </View>
-          </View> */}
           <Divider style={styles.divider} />
           <Caption style={styles.caption}>To Do List</Caption>
           <TouchableOpacity
@@ -249,7 +236,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   userInfoSection: {
-    paddingLeft: 20,
+    alignItems: "center",
   },
   title: {
     marginTop: 20,
